@@ -1,16 +1,104 @@
 .footer {
   background-color: rgb(21, 28, 34);
+  padding: 50px 0;
+}
+
+.footer__container {
+  max-width: 1180px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 35px;
 }
 
 .footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   display: flex;
   flex-direction: row;
+  column-gap: 35px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .footer__social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   display: flex;
   flex-direction: row;
+  column-gap: 30px;
+}
+
+.menu {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  column-gap: 35px;
+  padding: 25px 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__logo {
+  padding: 25px;
+}
+
+.menu__interactions {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  column-gap: 35px;
+  padding: 25px 0;
+}
+
+@font-face {
+  font-family: WorkSans;
+  font-display: swap;
+  src: url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2"), url("../fonts/WorkSans-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
