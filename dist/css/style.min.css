@@ -102,3 +102,55 @@
   margin: 0;
   padding: 0;
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 270px;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestsellers {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.bestsellers__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.news {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.category {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.catalog {
+  max-width: 1180px;
+  margin: 0 auto;
+}
