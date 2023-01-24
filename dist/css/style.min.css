@@ -117,12 +117,23 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   width: 270px;
 }
 
 .card__wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.card__price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.77px;
 }
 
 .bestsellers {
@@ -135,19 +146,93 @@
   flex-direction: row;
 }
 
+.intro {
+  background-color: #F1F2F4;
+  margin-bottom: 130px;
+}
+
 .intro__container {
   max-width: 1180px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  justify-content: center;
+}
+
+.intro__slogan {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.intro__button {
+  text-decoration: none;
+  color: black;
+  padding: 24px;
+  background-color: rgb(21, 28, 34);
+  color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.intro__img {
+  padding: 50px;
 }
 
 .news {
   max-width: 1180px;
   margin: 0 auto;
+  display: flex;
+}
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px 28px;
+  margin: 30px 70px 30px 0;
+}
+
+.news__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.news__button {
+  text-decoration: none;
+  color: black;
+  padding: 24px;
+  background-color: rgb(21, 28, 34);
+  color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .category {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.category__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
 }
 
 .catalog {
