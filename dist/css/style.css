@@ -19,8 +19,8 @@
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   display: flex;
   flex-direction: row;
   column-gap: 35px;
@@ -39,8 +39,8 @@
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   display: flex;
   flex-direction: row;
   column-gap: 30px;
@@ -84,8 +84,8 @@
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   display: flex;
   column-gap: 35px;
   padding: 25px 0;
@@ -94,13 +94,28 @@
 @font-face {
   font-family: WorkSans;
   font-display: swap;
-  src: url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2"), url("../fonts/WorkSans-VariableFont_wght.woff") format("woff");
+  src: url("../fonts/WorkSans.woff2") format("woff2"), url("../fonts/WorkSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: WorkSans;
+  font-display: swap;
+  src: url("../fonts/WorkSans-Italic.woff2") format("woff2"), url("../fonts/WorkSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Anton;
+  font-display: swap;
+  src: url("../fonts/Anton-Regular.woff2") format("woff2"), url("../fonts/Anton-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -120,8 +135,8 @@
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 13px;
+  line-height: 21px;
   width: 270px;
 }
 
@@ -136,14 +151,48 @@
   line-height: 18.77px;
 }
 
+.card__link {
+  text-decoration: none;
+  color: black;
+}
+
+.card__img {
+  margin-bottom: 25px;
+}
+
+.card__category {
+  margin-bottom: 15px;
+}
+
 .bestsellers {
   max-width: 1180px;
   margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.bestsellers__header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.bestsellers__view-link {
+  text-decoration: none;
+  color: black;
+}
+
+.bestsellers__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
 .bestsellers__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .intro {
@@ -161,16 +210,24 @@
 .intro__text-wrapper {
   display: flex;
   flex-direction: column;
-  padding-right: 50px;
   justify-content: center;
+  padding-right: 50px;
 }
 
 .intro__slogan {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgb(114, 122, 130);
+}
+
+.intro__header {
+  font-family: Anton, serif;
+  font-size: 128px;
+  line-height: 192px;
+  font-weight: 700;
 }
 
 .intro__button {
@@ -194,19 +251,62 @@
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+
+.news__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.news__header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.news__view-link {
+  text-decoration: none;
+  color: black;
 }
 
 .news__item {
   display: flex;
-  flex-direction: column;
-  padding: 50px 40px 28px;
-  margin: 30px 70px 30px 0;
+}
+
+.news__item-header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.news__date {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 13px;
 }
 
 .news__text {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.news__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px 28px;
+  margin: 30px 70px 30px 0;
 }
 
 .news__button {
@@ -225,6 +325,13 @@
 .category {
   max-width: 1180px;
   margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.category__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .category__list {
@@ -232,10 +339,39 @@
   margin: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   column-gap: 30px;
+}
+
+.category__header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.category__view-link {
+  text-decoration: none;
+  color: black;
+}
+
+.category__link {
+  text-decoration: none;
+  color: black;
 }
 
 .catalog {
   max-width: 1180px;
   margin: 0 auto;
+  padding-bottom: 130px;
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 90px;
 }
