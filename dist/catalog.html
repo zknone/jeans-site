@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="eng">
-    <head>
+  <head>
     <meta charset="UTF=8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>About us</title>
 </head>
-    <body>
-        <header>
+  <body>
+    <header>
   <nav class="menu">
     <ul class="menu__list">
       <li class="menu__item">
@@ -38,13 +38,39 @@
   </nav>
 </header>
 
-        <main>
-            <h1 class="visually-hidden">Our shop</h1>
-            
-            <section class="catalog">
-                <h2 class="visually-hidden">Women jackets</h2>
-                <ul class="catalog__list">
-                  <li class="catalog__item card">
+    <main>
+      <h1 class="visually-hidden">Our shop</h1>
+      <section class="catalog-info">
+        <div class="catalog-info__container">
+          <div class="catalog-info__wrapper">
+            <ul class="catalog-info__breadcrumbs">
+              <li class="catalog-info__breadcrumbs-item">
+                <a href="#" class="catalog-info__breadcrumbs-link"
+                  >All categories</a
+                >
+              </li>
+              <li class="catalog-info__breadcrumbs-item">
+                <a href="#" class="catalog-info__breadcrumbs-link">Women</a>
+              </li>
+              <li class="catalog-info__breadcrumbs-item">
+                <a href="#" class="catalog-info__breadcrumbs-link">Jacket</a>
+              </li>
+            </ul>
+            <h2 class="catalog-info__header">Denim Collection Fall 2019</h2>
+          </div>
+          <div class="catalog-info__img-wrapper">
+            <img
+              src="./img/new-collection.jpg"
+              alt="New collection 2022"
+              class="catalog-info__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Women jackets list</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item card">
   <article class="card__wrapper">
     <a href="" class="card__link">
       <img
@@ -165,10 +191,10 @@
   </article>
 </li>
 
-                </ul>
-              </section>
-        </main>
-        <footer class="footer">
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
   <div class="footer__container">
     <img
       src="../img/Nîmes-white-logo.svg"
@@ -241,5 +267,5 @@
   </div>
 </footer>
 
-    </body>
+  </body>
 </html>
